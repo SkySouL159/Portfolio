@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useRef } from "react";
 import {
   motion,
   useAnimationFrame,
@@ -7,8 +7,9 @@ import {
   useMotionValue,
   useTransform,
 } from "motion/react";
-import { useRef } from "react";
 import { cn } from "@/utils/cn";
+
+// Define a button component
 export function Button({
   borderRadius = "1.75rem",
   children,
@@ -21,12 +22,12 @@ export function Button({
 }: {
   borderRadius?: string;
   children: React.ReactNode;
-  as?: React.ElementType; // Use a more specific type
+  as?: React.ElementType;
   containerClassName?: string;
   borderClassName?: string;
   duration?: number;
   className?: string;
-  [key: string]: unknown; // Use a safer type
+  [key: string]: any; // Allow any other props to be passed
 }) {
   return (
     <Component
@@ -67,6 +68,8 @@ export function Button({
     </Component>
   );
 }
+
+// Define a moving border component
 export const MovingBorder = ({
   children,
   duration = 3000,
@@ -78,9 +81,9 @@ export const MovingBorder = ({
   duration?: number;
   rx?: string;
   ry?: string;
-  [key: string]: unknown; // Use a safer type
+  [key: string]: any;
 }) => {
-  const pathRef = useRef<SVGRectElement | null>(null); // Specify the type of the ref
+  const pathRef = useRef<SVGRectElement | null>(null); // Type ref
   const progress = useMotionValue<number>(0);
 
   useAnimationFrame((time) => {
