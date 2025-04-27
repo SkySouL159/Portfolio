@@ -19,7 +19,9 @@ export function BentoGridThirdDemo() {
         <BentoGridItem
           key={i}
           title={item.title}
-          description={item.description}
+          description={
+            typeof item.description === "string" ? item.description : ""
+          } // Ensure description is a string
           header={item.header}
           className={cn("[&>p:text-lg]", item.className)}
           icon={item.icon}
