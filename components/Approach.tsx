@@ -10,7 +10,7 @@ const Approach = () => {
       <h1 className="heading">
         My <span className="text-purple">Approach</span>
       </h1>
-      <div className="my-12 flex flex-col md:flex-row lg:flex-row items-center justify-center gap-4">
+      <div className="my-12 flex flex-col md:flex-row lg:flex-row items-center justify-center gap-4 md:gap-2">
         <Card
           title="Planning & Strategy"
           icon={<AceternityIcon order="phase 1" />}
@@ -68,7 +68,7 @@ const Card = ({
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className="border border-black/[0.2] group/canvas-card flex items-center justify-center dark:border-white/[0.2]  max-w-sm  mx-auto p-4  lg:h-[30rem] relative"
+      className="border border-black/[0.2] group/canvas-card flex items-center justify-center dark:border-white/[0.2]  max-w-sm  mx-auto p-8 md:p-4 lg:p-4 lg:h-[30rem] relative"
     >
       <Icon className="absolute h-6 w-6 -top-3 -left-3 dark:text-white text-black" />
       <Icon className="absolute h-6 w-6 -bottom-3 -left-3 dark:text-white text-black" />

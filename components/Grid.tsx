@@ -2,11 +2,11 @@
 import { cn } from "@/utils/cn";
 import { BentoGrid, BentoGridItem } from "./ui/BentoGrid";
 import {
-  IconBoxAlignRightFilled,
-  IconClipboardCopy,
-  IconFileBroken,
-  IconSignature,
-  IconTableColumn,
+  IconDeviceDesktopCode,
+  IconApi,
+  IconDatabase,
+  IconLayoutDashboard,
+  IconStack3,
 } from "@tabler/icons-react";
 import { motion } from "motion/react";
 import Image from "next/image"; // Added import for Next.js Image component
@@ -308,7 +308,7 @@ const items = [
     ),
     header: <SkeletonOne />,
     className: "md:col-span-1",
-    icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
+    icon: <IconDeviceDesktopCode className="h-5 w-5 text-blue-500" />, // blue = tech/coding
   },
   {
     title: "API Integration",
@@ -319,7 +319,7 @@ const items = [
     ),
     header: <SkeletonTwo />,
     className: "md:col-span-1",
-    icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
+    icon: <IconApi className="h-5 w-5 text-green-500" />, // green = connectivity/growth
   },
   {
     title: "Database Management",
@@ -330,7 +330,7 @@ const items = [
     ),
     header: <SkeletonThree />,
     className: "md:col-span-1",
-    icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
+    icon: <IconDatabase className="h-5 w-5 text-amber-500" />, // amber = data/solid foundation
   },
   {
     title: "Responsive UI/UX Design",
@@ -341,7 +341,7 @@ const items = [
     ),
     header: <SkeletonFour />,
     className: "md:col-span-2",
-    icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
+    icon: <IconLayoutDashboard className="h-5 w-5 text-pink-500" />, // pink = creativity/design
   },
   {
     title: "Full Stack Application Development",
@@ -352,6 +352,6 @@ const items = [
     ),
     header: <SkeletonFive />,
     className: "md:col-span-1",
-    icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
+    icon: <IconStack3 className="h-5 w-5 text-purple-500" />, // purple = complexity/full-stack
   },
 ];

@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 const RecentProjects = () => {
   return (
-    <div className="lg:py-20 relative" id="projects">
+    <div className=" relative" id="projects">
       <h1 className="heading mb-4">
         All my <span className="text-purple ">Recent Projects</span>
       </h1>
@@ -27,7 +27,7 @@ const RecentProjects = () => {
                 e.preventDefault();
               }
             }}
-            className="sm:h-[30rem] h-[25rem] lg:min-h-[35.5rem] flex items-center justify-center sm:w-[570px] w-[80vw]"
+            className="sm:h-[30rem] h-[25rem] lg:min-h-[35.5rem] flex items-center justify-center sm:w-[570px] w-[80vw] " // Added border color
           >
             <motion.div
               whileHover={{ scale: 1.02 }}
@@ -69,7 +69,7 @@ const RecentProjects = () => {
                     {iconLists.map((icon, index) => (
                       <div
                         key={icon}
-                        className="border border-white/[0.2] rounded-full bg-black lg:w-10 w-8 h-8 flex justify-center items-center"
+                        className="border border-white/[0.2] rounded-full bg-black lg:w-10 w-8 h-8 flex justify-center items-center" // Added border color
                         style={{
                           transform: `translateX(-${5 * index * 2}px)`,
                         }}

@@ -169,7 +169,7 @@ export const socialMedia = [
   {
     id: 2,
     img: "/wha.svg",
-    url: "https://wa.me/8347147984", // <-- Replace 'yourNumberHere' with your WhatsApp number
+    url: "https://wa.me/+91-8347147984", // <-- Replace 'yourNumberHere' with your WhatsApp number
   },
   {
     id: 3,
