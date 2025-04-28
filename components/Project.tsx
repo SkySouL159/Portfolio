@@ -23,7 +23,7 @@ export function Project() {
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
         viewport={{ once: true }}
-        className="max-w-6xl md:mb-8 md:auto-rows-[20rem] rounded-3xl bg-gray-950/5 p-2 ring-1 ring-neutral-700/10 dark:bg-neutral-800 mx-auto"
+        className="max-w-6xl md:mb-8  md:auto-rows-[20rem] rounded-3xl bg-gray-950/5 p-2 ring-1 ring-neutral-700/10 dark:bg-neutral-800 mx-auto"
       >
         <ThreeDMarquee images={images} />
       </motion.div>

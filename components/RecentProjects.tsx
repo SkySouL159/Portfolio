@@ -1,5 +1,4 @@
 "use client";
-
 import { projects } from "@/data";
 import React from "react";
 import { PinContainer } from "./ui/3d-pin";
@@ -10,8 +9,8 @@ import { motion } from "framer-motion";
 const RecentProjects = () => {
   return (
     <div className="lg:py-20 relative" id="projects">
-      <h1 className="heading">
-        All my <span className="text-purple">Recent Projects</span>
+      <h1 className="heading mb-4">
+        All my <span className="text-purple ">Recent Projects</span>
       </h1>
 
       <div className="flex flex-wrap items-center justify-center mx-10 gap-x-8 gap-y-8 md:mt-4">
@@ -22,6 +21,12 @@ const RecentProjects = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut", delay: index * 0.1 }}
             viewport={{ once: true }}
+            onClick={(e) => {
+              const target = e.target as HTMLElement;
+              if (target.tagName.toLowerCase() !== "a") {
+                e.preventDefault();
+              }
+            }}
             className="sm:h-[30rem] h-[25rem] lg:min-h-[35.5rem] flex items-center justify-center sm:w-[570px] w-[80vw]"
           >
             <motion.div
@@ -29,7 +34,7 @@ const RecentProjects = () => {
               transition={{ type: "spring", stiffness: 300 }}
               className="w-full"
             >
-              <PinContainer title={title} href={link}>
+              <PinContainer title={title}>
                 {/* Project Image Section */}
                 <div className="relative flex items-center justify-center sm:w-[545px] w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh] mb-10">
                   <div className="relative w-auto h-full overflow-hidden lg:rounded-3xl bg-[#13162d]">
@@ -86,10 +91,13 @@ const RecentProjects = () => {
                     transition={{ type: "spring", stiffness: 400 }}
                     className="flex items-center justify-center"
                   >
-                    <p className="flex lg:text-xl md:text-xs text-sm text-purple">
+                    <div
+                      onClick={() => window.open(link, "_blank")}
+                      className="flex items-center lg:text-xl md:text-xs text-sm text-purple cursor-pointer"
+                    >
                       Check Live Site
-                    </p>
-                    <FaLocationArrow className="ms-3" color="#CBACF9" />
+                      <FaLocationArrow className="ms-3" color="#CBACF9" />
+                    </div>
                   </motion.div>
                 </div>
               </PinContainer>
