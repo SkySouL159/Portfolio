@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   swcMinify: true, // Enable SWC minifier
   images: {
-    domains: ["example.com"], // Add external image domains
+    domains: ["example.com", "assets.aceternity.com"], // Add external image domains
   },
   async redirects() {
     return [

@@ -2,6 +2,8 @@
 
 import { motion } from "motion/react";
 import { cn } from "@/utils/cn";
+import Image from "next/image"; // Import the Image component from Next.js
+
 export const ThreeDMarquee = ({
   images,
   className,
@@ -15,6 +17,7 @@ export const ThreeDMarquee = ({
     const start = colIndex * chunkSize;
     return images.slice(start, start + chunkSize);
   });
+
   return (
     <div
       className={cn(
@@ -45,7 +48,7 @@ export const ThreeDMarquee = ({
                 {subarray.map((image, imageIndex) => (
                   <div className="relative" key={imageIndex + image}>
                     <GridLineHorizontal className="-top-4" offset="20px" />
-                    <motion.img
+                    <motion.div
                       whileHover={{
                         y: -10,
                       }}
@@ -53,13 +56,18 @@ export const ThreeDMarquee = ({
                         duration: 0.3,
                         ease: "easeInOut",
                       }}
-                      key={imageIndex + image}
-                      src={image}
-                      alt={`Image ${imageIndex + 1}`}
-                      className=" aspect-[970/700]  rounded-lg object-cover ring ring-gray-950/5 hover:shadow-2xl"
-                      width={970}
-                      height={700}
-                    />
+                    >
+                      <Image
+                        src={image} // Image source
+                        alt={`Image ${imageIndex + 1}`}
+                        width={970} // Image width
+                        height={700} // Image height
+                        quality={80} // Compress image to 80% of original quality
+                        loading="lazy" // Lazy load images
+                        sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 970px" // Define sizes for responsiveness
+                        className="aspect-[970/700] rounded-lg object-cover ring ring-gray-950/5 hover:shadow-2xl"
+                      />
+                    </motion.div>
                   </div>
                 ))}
               </motion.div>
