@@ -13,7 +13,7 @@ const RecentProjects = () => {
         All my <span className="text-purple ">Recent Projects</span>
       </h1>
 
-      <div className="flex flex-wrap items-center justify-center mx-10 gap-x-8 gap-y-8 md:mt-4">
+      <div className="flex flex-wrap items-center justify-center mx-10 gap-x-8 md:gap-y-4 gap-y-12 lg:gap-y-0 md:mt-4">
         {projects.map(({ id, title, des, img, iconLists, link }, index) => (
           <motion.div
             key={id}
