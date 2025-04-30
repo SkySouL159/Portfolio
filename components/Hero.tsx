@@ -59,8 +59,8 @@ const Hero = () => {
             viewport={{ once: true }}
             className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-xl"
           >
-            Hey there! I&apos;m ༺SkY༻, turning ideas into fast, beautiful web
-            experiences with Next.js.
+            Hey there! I&apos;m Akash Patel, turning ideas into fast, beautiful
+            web experiences with Next.js.
           </motion.p>
 
           <motion.div
@@ -71,7 +71,7 @@ const Hero = () => {
           >
             <Link href={"#projects"}>
               <MagicButton
-                title="See What I’ve Built"
+                title="Explore My Projects"
                 icon={<FaLocationArrow />}
                 position="right"
               />
