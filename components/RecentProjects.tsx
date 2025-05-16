@@ -84,21 +84,22 @@ const RecentProjects = () => {
                       </div>
                     ))}
                   </div>
-
                   {/* Check Live Site Button with Animated Arrow */}
-                  <motion.div
-                    whileHover={{ rotate: 5 }}
-                    transition={{ type: "spring", stiffness: 400 }}
-                    className="flex items-center justify-center"
-                  >
-                    <div
-                      onClick={() => window.open(link, "_blank")}
-                      className="flex items-center lg:text-xl md:text-xs text-sm text-purple cursor-pointer"
+                  {link && (
+                    <motion.div
+                      whileHover={{ rotate: 5 }}
+                      transition={{ type: "spring", stiffness: 400 }}
+                      className="flex items-center justify-center"
                     >
-                      Check Live Site
-                      <FaLocationArrow className="ms-3" color="#CBACF9" />
-                    </div>
-                  </motion.div>
+                      <div
+                        onClick={() => window.open(link, "_blank")}
+                        className="flex items-center lg:text-xl md:text-xs text-sm text-purple cursor-pointer"
+                      >
+                        Check Live Site
+                        <FaLocationArrow className="ms-3" color="#CBACF9" />
+                      </div>
+                    </motion.div>
+                  )}
                 </div>
               </PinContainer>
             </motion.div>

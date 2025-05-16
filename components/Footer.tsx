@@ -31,9 +31,7 @@ const Footer = () => {
           <p className="md:text-base text-sm md:font-normal font-light">
             © 2025 Akash Patel
           </p>
-          <p className="text-gray-400 text-xs">
-            Designed & Coded with ❤️ in Next.js
-          </p>
+          <p className="text-gray-400 text-xs">build with ❤️ in Next.js</p>
         </div>
 
         <div className="flex items-center md:gap-3 gap-2 mt-2">

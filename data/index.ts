@@ -83,52 +83,63 @@ export const projects = [
       "/techstack/sb.png",
       "/techstack/vc.svg",
     ],
-    link: "",
+    link: "https://online-menu-gilt.vercel.app/",
   },
   {
     id: 4,
-    title: "ForeignRoutes",
-    des: "Developed a scalable provider portal using React & Vite to enable seamless service integration and real-time data updates.",
-    img: "/project/fr.png",
-    iconLists: ["/techstack/re.svg", "/techstack/fm.svg"],
-    link: "https://foreignroutes.in/",
+    title: "Gas Distrubution Sytem",
+    des: "Developed a API for AdminPanel and Android App to get delivery details,total caluclation and other details.",
+    img: "/project/gds.png",
+    iconLists: [
+      "/techstack/vt.png",
+      "/techstack/lv.png",
+      "/techstack/git.svg",
+      "/techstack/pm.png",
+      "/techstack/mysql.png",
+    ],
+    link: "",
   },
 ];
 //  Project
 export const images = [
+  "/project/gds.png",
   "/project/fr.png",
   "/project/g.png",
-  "/allprojects/ig.png",
-  "/project/om.png",
+  "/project/ig.png",
+  // start 1 row start
+  "/project/ig.png",
   "/project/fr.png",
-  "/project/g.png",
   "/allprojects/rms2.png",
+  // end
+  "/allprojects/gdsapp.png",
   "/allprojects/gf.png",
-  "/project/rms.png",
-  "/project/ig.png",
-  "/allproject/rms2.png",
-  "/project/fr.png",
-  "/allprojects/gf.png",
+  "/allprojects/ig.png",
   "/allprojects/rms.png",
+  // second row star
+  "/allprojects/rms.png",
+  "/allprojects/gf.png",
+  "/allprojects/gdsapp.png",
   "/allprojects/ig.png",
   "/project/om.png",
+  // end
+  "/project/om.png",
   "/project/fr.png",
-  "/project/g.png",
   "/allprojects/rms2.png",
-  "/allprojects/g.png",
+  "/allprojects/gdsapp.png",
+  // third row star
+  "/project/g.png",
   "/project/ig.png",
-  "/project/ig.png",
+  "/allprojects/rms.png",
+  // end
+  "/project/g.png",
   "/project/fr.png",
   "/project/g.png",
-  "/allprojects/ig.png",
+  "/allprojects/gdsapp.png",
+  "/project/ig.png",
   "/project/om.png",
   "/project/fr.png",
-  "/allprojects/gf.png",
-  "/allprojects/rms.png",
-  "/project/g.png",
   "/allprojects/ig.png",
-  "/project/ig.png",
-  "/project/ig.png",
+  "/allprojects/rms.png",
 ];
 // Experience
 export const workExperience = [
@@ -181,6 +192,6 @@ export const socialMedia = [
   {
     id: 4,
     img: "/insta.svg",
-    url: "", // <-- Replace with your LinkedIn profile URL
+    url: "https://instagram.com/akash_patel159", // <-- Replace with your LinkedIn profile URL
   },
 ];

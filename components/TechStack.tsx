@@ -28,7 +28,7 @@ export default function TechStack() {
               visible: { opacity: 1, y: 0 },
             }}
             transition={{ duration: 0.6, delay: index * 0.05 }}
-            className="relative inline-flex h-24 w-24 overflow-hidden rounded-full p-[2px] focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-black group"
+            className="relative inline-flex h-24 w-24 overflow-hidden rounded-full p-[2px] hover:outline-none hover:ring-2 hover:ring-purple-500 hover:ring-offset-2 hover:ring-offset-black group"
           >
             <span
               style={{
